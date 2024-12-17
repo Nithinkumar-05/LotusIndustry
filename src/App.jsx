@@ -7,7 +7,7 @@ import './App.css'
 import ContactBar from './components/ContactBar';
 import ContactUs from './components/ContactUs';
 import AboutUs from './components/AboutUs';
-
+import Footer from './components/Footer';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +21,7 @@ function App() {
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
         </Routes>
+        <Footer></Footer>
       </Router>
     </>
   )
