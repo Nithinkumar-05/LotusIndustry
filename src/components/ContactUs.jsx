@@ -74,10 +74,10 @@ const ContactUs = () => {
         <div className="mt-12 text-center">
           <h2 className="text-xl font-semibold text-gray-700 mb-4">Get in Touch</h2>
           <p className="text-gray-600">
-            Phone: <a href="tel:+1234567890" className="text-indigo-600 hover:underline">+1 (234) 567-890</a>
+            Phone: <a href="tel:+1234567890" className="text-indigo-600 hover:underline">9440058318,9704023786</a>
           </p>
           <p className="text-gray-600">
-            Email: <a href="mailto:info@example.com" className="text-indigo-600 hover:underline">info@example.com</a>
+            Email: <a href="mailto:info@example.com" className="text-indigo-600 hover:underline">Lotusindustries97@gmail.com</a>
           </p>
           <p className="text-gray-600">
             Address: 123 Main Street, Anytown, USA

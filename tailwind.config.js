@@ -1,4 +1,3 @@
-// tailwind.config.js
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -14,6 +13,7 @@ export default {
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'cursive': ['"Playwrite Cuba"', 'playwright', 'cursive'],
       },
     },
   },

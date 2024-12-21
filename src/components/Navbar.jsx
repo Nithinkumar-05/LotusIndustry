@@ -15,7 +15,7 @@ const Navbar = () => {
       <CNavbar expand="lg" className="bg-transparent shadow-md backdrop-blur-lg fixed top-0 left-0 w-full z-50">
         <CContainer fluid>
           {/* Brand Logo */}
-          <CNavbarBrand href="#" className="text-2xl font-semibold text-gray-800">
+          <CNavbarBrand href="/" className="text-2xl font-cursive font-semibold text-gray-800">
             LOTUS INDUSTRIES
           </CNavbarBrand>
 
