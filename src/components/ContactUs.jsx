@@ -1,6 +1,6 @@
 import React from "react";
-import { CForm, CFormLabel, CFormInput, CFormTextarea, CButton } from "@coreui/react";
-import { TextField, Button } from "@mui/material";
+import { CForm, CFormLabel, CFormInput, CFormTextarea, CRow,CCol } from "@coreui/react";
+import { Button } from "@mui/material";
 
 const ContactUs = () => {
   return (
@@ -69,7 +69,7 @@ const ContactUs = () => {
             </Button>
           </div>
         </CForm>
-
+        <hr />
         {/* Additional Contact Info */}
         <div className="mt-12 text-center">
           <h2 className="text-xl font-semibold text-gray-700 mb-4">Get in Touch</h2>
@@ -79,9 +79,34 @@ const ContactUs = () => {
           <p className="text-gray-600">
             Email: <a href="mailto:info@example.com" className="text-indigo-600 hover:underline">Lotusindustries97@gmail.com</a>
           </p>
+          <CRow>
+            <CCol xs={12}>
           <p className="text-gray-600">
-            Address: 123 Main Street, Anytown, USA
+            Address:
+            <br />
+            Factory Survey No. 6 & 16, Near Venkateswara Swami Temple,
+            <br />
+            Injapur Village, Hayathnagar
+            <br />
+            Telangana 500070
           </p>
+          </CCol>
+          <CCol xs={12}>
+          <div className="mt-6 flex justify-center">
+            {/* Google Map */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4483.06817020991!2d78.59284804700515!3d17.306102579209234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba133ca8480d5%3A0x42a9d665bca3c5d6!2sLotus%20Industries!5e0!3m2!1sen!2sin!4v1735030055748!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Lotus Industries Location"
+            ></iframe>
+          </div>
+          </CCol>
+          </CRow>
         </div>
       </div>
     </div>

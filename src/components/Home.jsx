@@ -10,6 +10,7 @@ import {
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Container } from "@mui/material";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // Placeholder image URLs
 const ProductionImg1 ="Images/factory_1.png";
@@ -26,7 +27,10 @@ const Home = () => {
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
-
+  const scrollVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <div>
       {/* Carousel */}
@@ -101,7 +105,7 @@ const Home = () => {
       </div>
 
       {/* Product Showcase */}
-  <Container className="mt-0 mb-12 shadow-lg">
+  <Container className="mt-0 mb-12 px-3">
     <hr />
     <br />
     <h2 className="text-5xl text-center font-extrabold mb-8">
@@ -109,7 +113,16 @@ const Home = () => {
     </h2>
 
     {/* Row 1 */}
-    <div className="mb-8">
+    <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+        variants={scrollVariants}
+        className="mb-8"
+      >
+
+    
       <h3 className="border-2 border-slate-900 rounded-lg p-2 text-center mb-4">
         Boxes
       </h3>
@@ -160,14 +173,22 @@ const Home = () => {
           </div>
         </CCol>
       </CRow>
-    </div>
-
+    
+    </motion.div>        
   {/* Row 2 */}
-  <div className="mb-8">
+  <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+        variants={scrollVariants}
+        className="mb-8"
+      >
+
     <h3 className="border-2 border-slate-900 rounded-lg p-2 text-center mb-4">
       Fantray
     </h3>
-    <CRow className="row-cols-1 row-cols-md-3 g-4">
+    <CRow className="row-cols-1 row-cols-md-3 g-4 mb-2">
       <CCol>
         <div className="bg-industrial-gray-light p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
           <img
@@ -260,7 +281,7 @@ const Home = () => {
           </p>
         </div>
       </CCol>
-
+      
     </CRow>
     <br />
     <CRow className="row-cols-1 row-cols-md-3 g-4 flex justify-center">
@@ -280,8 +301,17 @@ const Home = () => {
         </div>
       </CCol>
     </CRow>
-  </div>
-  <div className="mb-8">
+  </motion.div>
+
+  <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+        variants={scrollVariants}
+        className="mb-8"
+      >
+
       <h3 className="border-2 border-slate-900 rounded-lg p-2 text-center mb-4">
         Pipes and Sheets
       </h3>
@@ -318,8 +348,16 @@ const Home = () => {
         </CCol>
 
       </CRow>
-    </div>
-    <div className="mb-8">
+    </motion.div>
+    <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6 }}
+        variants={scrollVariants}
+        className="mb-8"
+      >
+
       <h3 className="border-2 border-slate-900 rounded-lg p-2 text-center mb-4">
         Thermocol balls
       </h3>
@@ -342,9 +380,8 @@ const Home = () => {
         
 
       </CRow>
-    </div>
+    </motion.div>
     
-    <br />
 </Container>
 
       {/* Call to Action */}

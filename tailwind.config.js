@@ -9,11 +9,11 @@ export default {
           'orange': '#E67E22',
           'orange-dark': '#D35400',
           'gray-light': '#F4F6F7',
+          'gold':'#DBC078',
         },
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
-        'cursive': ['"Playwrite Cuba"', 'playwright', 'cursive'],
+        'sans': ['Work Sans', 'system-ui', 'sans-serif'],
       },
     },
   },
