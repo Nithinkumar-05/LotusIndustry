@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 // Placeholder image URLs
 const ProductionImg1 ="Images/factory_1.png";
-const ProductionImg2 ="Images/factory_2.png";
+const ProductionImg2 ="Images/factory.png";
 const ProductionImg3 ="Images/factory_3.png";
 const placeholder = "Images/factory_4.jpg";
 
