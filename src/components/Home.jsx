@@ -9,9 +9,8 @@ import {
 } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { Container } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-
 // Placeholder image URLs
 const ProductionImg1 ="Images/factory_1.png";
 const ProductionImg2 ="Images/factory.png";
@@ -31,11 +30,11 @@ const Home = () => {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   };
+  const navigate = useNavigate();
   return (
-    <div>
+    <div className="max-w-full overflow-hidden">
       {/* Carousel */}
-      <Container className="max-w-full p-0">
-        <div className="relative w-full">
+        {/* <div className="relative w-full">
           <CCarousel controls indicators dark className="w-full">
             {[
               {
@@ -77,11 +76,48 @@ const Home = () => {
               </CCarouselItem>
             ))}
           </CCarousel>
+        </div> */}
+        
+
+        <div className="w-full">
+        <div className="h-[600px] relative overflow-hidden">
+          <CImage
+            className="w-full h-full object-cover"
+            src={ProductionImg1}
+            alt="Industrial Equipment"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50">
+  <div className="container mx-auto h-full flex items-center">
+    <div className="max-w-3xl px-4 ">
+      <h1 className="text-5xl font-bold text-white mb-6">
+        ADVANCED EPS MANUFACTURING SOLUTIONS
+      </h1>
+      <p className="text-xl text-white mb-8">
+        Delivering premium quality thermocol products for all your packaging and insulation needs.
+      </p>
+      <p className="text-lg text-white mb-8">
+        Specializing in custom EPS solutions including protective packaging, insulation boards, construction materials, food-grade containers, and specialized industrial components. Built with precision, delivered with excellence.
+      </p>
+      <div className="flex gap-4">
+        <button className="bg-white text-gray-900 px-6 py-3 rounded hover:bg-gray-100 transition-colors" onClick={() => navigate("/about")}>
+          Learn More
+        </button>
+        <button className="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition-colors" onClick={() => navigate("/contact")}>
+          Request a Quote
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
-      </Container>
+      </div>
+        
+      
+      
+      
 
       {/* Key Advantages Section */}
-      <div className="bg-gray-100 py-12 px-8 rounded-lg shadow-lg">
+      <div className="bg-white py-12 px-8 rounded-lg">
         <div className="border-t-4 border-gray-600 w-1/4 mb-6 mx-auto"></div>
         <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-8">Why Choose Us?</h1>
         <CRow className="gap-6 items-center">
@@ -134,12 +170,12 @@ const Home = () => {
               alt="Industrial Thermal Units"
               className="mx-auto mb-4 max-h-48 object-contain"
             />
-            <h3 className="text-xl font-semibold text-industrial-blue">
+            {/* <h3 className="text-xl font-semibold text-gray-700">
               Industrial Thermal Units
             </h3>
             <p className="text-industrial-dark mt-2">
               High-capacity thermal processing equipment
-            </p>
+            </p> */}
           </div>
         </CCol>
         <CCol>
@@ -149,12 +185,12 @@ const Home = () => {
               alt="Precision Thermal Chambers"
               className="mx-auto mb-4 max-h-48 object-contain"
             />
-            <h3 className="text-xl font-semibold text-industrial-blue">
+            {/* <h3 className="text-xl font-semibold text-gary-700">
               Precision Thermal Chambers
             </h3>
             <p className="text-industrial-dark mt-2">
               Advanced temperature control systems
-            </p>
+            </p> */}
           </div>
         </CCol>
         <CCol>
@@ -164,12 +200,12 @@ const Home = () => {
               alt="Specialized Thermal Modules"
               className="mx-auto mb-4 max-h-48 object-contain"
             />
-            <h3 className="text-xl font-semibold text-industrial-blue">
+            {/* <h3 className="text-xl font-semibold text-gary-700">
               Specialized Thermal Modules
             </h3>
             <p className="text-industrial-dark mt-2">
               Customizable thermal solution platforms
-            </p>
+            </p> */}
           </div>
         </CCol>
       </CRow>
@@ -196,12 +232,12 @@ const Home = () => {
             alt="High-Density Sheets"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
-          <h3 className="text-xl font-semibold text-industrial-blue">
+          {/* <h3 className="text-xl font-semibold text-gary-700">
             Aura
           </h3>
           <p className="text-industrial-dark mt-2">
             Durable sheets for insulation and packaging
-          </p>
+          </p> */}
         </div>
       </CCol>
       <CCol>
@@ -211,12 +247,12 @@ const Home = () => {
             alt="Customizable Sheets"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
-          <h3 className="text-xl font-semibold text-industrial-blue">
+          {/* <h3 className="text-xl font-semibold text-gary-700">
             Regular
           </h3>
           <p className="text-industrial-dark mt-2">
             Tailored to meet specific industrial need which is used very frequently
-          </p>
+          </p> */}
         </div>
       </CCol>
       <CCol>
@@ -226,12 +262,12 @@ const Home = () => {
             alt="Eco-Friendly Sheets"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
-          <h3 className="text-xl font-semibold text-industrial-blue">
+          {/* <h3 className="text-xl font-semibold text-gary-700">
             205mm
           </h3>
           <p className="text-industrial-dark mt-2">
             Sustainable thermocol sheet solutions
-          </p>
+          </p> */}
         </div>
       </CCol>
     </CRow>
@@ -243,12 +279,12 @@ const Home = () => {
             alt="Compact Packaging Solutions"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
-          <h3 className="text-xl font-semibold text-industrial-blue">
+          {/* <h3 className="text-xl font-semibold text-gary-700">
             Compact Packaging Solutions
           </h3>
           <p className="text-industrial-dark mt-2">
             Efficient and reliable thermal packaging
-          </p>
+          </p> */}
         </div>
       </CCol>
       <CCol>
@@ -258,12 +294,12 @@ const Home = () => {
             alt="Industrial Packaging"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
-          <h3 className="text-xl font-semibold text-industrial-blue">
+          {/* <h3 className="text-xl font-semibold text-gary-700">
             Super Star
           </h3>
           <p className="text-industrial-dark mt-2">
             Robust solutions for industrial-grade safety
-          </p>
+          </p> */}
         </div>
       </CCol>
       <CCol>
@@ -273,13 +309,13 @@ const Home = () => {
             alt="Lightweight Packaging"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
-          <h3 className="text-xl font-semibold text-industrial-blue">
-            46mm
+          {/* <h3 className="text-xl font-semibold text-gary-700">
+            
           </h3>
           <p className="text-industrial-dark mt-2">
             Lightweight yet durable packaging options
-          </p>
-        </div>
+          </p>*/}
+        </div> 
       </CCol>
       
     </CRow>
@@ -292,12 +328,12 @@ const Home = () => {
             alt="Lightweight Packaging"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
-          <h3 className="text-xl font-semibold text-industrial-blue">
-            46mm
+          {/* <h3 className="text-xl font-semibold text-gary-700">
+            Table Fan
           </h3>
           <p className="text-industrial-dark mt-2">
             Lightweight yet durable packaging options
-          </p>
+          </p> */}
         </div>
       </CCol>
     </CRow>
@@ -323,12 +359,12 @@ const Home = () => {
               alt="Industrial Thermal Units"
               className="mx-auto mb-4 max-h-48 object-contain"
             />
-            <h3 className="text-xl font-semibold text-industrial-blue">
+            {/* <h3 className="text-xl font-semibold text-gary-700">
               Thermocol Sheets
             </h3>
             <p className="text-industrial-dark mt-2">
               High-capacity thermocol processing sheet
-            </p>
+            </p> */}
           </div>
         </CCol>
         <CCol>
@@ -338,12 +374,12 @@ const Home = () => {
               alt="Precision Thermal Chambers"
               className="mx-auto mb-4 max-h-48 object-contain"
             />
-            <h3 className="text-xl font-semibold text-industrial-blue">
-              Precision Thermal Chambers
+            {/* <h3 className="text-xl font-semibold text-gary-700">
+              Pipe Section
             </h3>
             <p className="text-industrial-dark mt-2">
               Advanced temperature control systems
-            </p>
+            </p> */}
           </div>
         </CCol>
 
@@ -369,12 +405,12 @@ const Home = () => {
               alt="Industrial Thermal Units"
               className="mx-auto mb-4 max-h-48 object-contain"
             />
-            <h3 className="text-xl font-semibold text-industrial-blue">
+            {/* <h3 className="text-xl font-semibold text-gary-700">
               Thermocol Balls
             </h3>
             <p className="text-industrial-dark mt-2">
               High-capacity thermocol processing sheet
-            </p>
+            </p> */}
           </div>
         </CCol>
         
@@ -383,9 +419,9 @@ const Home = () => {
     </motion.div>
     
 </Container>
-
+      <div className="m-2 p-2"><hr/></div>
       {/* Call to Action */}
-      <div className="border-2 rounded-md py-12 text-center">
+      <div className="py-12 text-center">
         <h2 className="text-3xl font-bold mb-6">
           Ready to Order Our EPS Solutions?
         </h2>
@@ -394,7 +430,7 @@ const Home = () => {
         </p>
         <Link
           to="/contact"
-          className="bg-industrial-orange text-white px-6 py-3 rounded-lg hover:bg-industrial-orange-dark transition-all no-underline"
+          className="bg-red-600 text-white px-6 py-3 rounded-3xl hover:bg-red-700 transition-all no-underline"
         >
           Get a Quote
         </Link>
