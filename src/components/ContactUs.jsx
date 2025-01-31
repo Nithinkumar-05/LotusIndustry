@@ -37,8 +37,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen py-12 px-6">
-      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8">
+    <div className="bg-gray-100 min-h-screen py-12 px-6 ">
+      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-8 ">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h1>
         <p className="text-center text-gray-600 mb-8">Have questions? Fill out the form below, and we'll get back to you.</p>
 
