@@ -19,10 +19,10 @@ const ContactUs = () => {
     
     emailjs
       .send(
-        "service_cfkoqgf",  // Replace with your EmailJS Service ID
-        "template_buwfhn5", // Replace with your EmailJS Template ID
+        "service_efpzl2a",  // Replace with your EmailJS Service ID
+        "template_e1o34gx", // Replace with your EmailJS Template ID
         formData,
-        "6GwtwGMNQ8qJ_ESL9"       // Replace with your EmailJS User ID
+        "bY49Yzbzcu6zceVsf"       // Replace with your EmailJS User ID
       )
       .then(
         (response) => {
@@ -97,8 +97,8 @@ const ContactUs = () => {
           <h2 className="text-xl font-semibold text-center text-gray-700 mb-4">Get in Touch</h2>
           <CRow className="gap-6 items-start">
             <CCol>
-              <p className="text-gray-600 text-lg"><strong>Phone:</strong> <a href="tel:+1234567890" className="text-indigo-600 hover:underline no-underline">9440058318, 9704023786</a></p>
-              <p className="text-gray-600 text-lg"><strong>Email:</strong> <a href="mailto:Lotusindustries97@gmail.com" className="text-indigo-600 hover:underline no-underline">Lotusindustries97@gmail.com</a></p>
+              <p className="text-gray-600 text-lg"><strong>Phone:</strong> <a href="tel:+1234567890" className="text-indigo-600 hover:underline no-underline">+91 9440058318,+91 9704023786</a></p>
+              <p className="text-gray-600 text-lg"><strong>Email:</strong> <a href="mailto:Lotusindustries97@gmail.com" className="text-indigo-600 hover:underline no-underline">lotusindustries97@gmail.com</a></p>
               <p className="text-gray-600 text-lg">
                 <strong>Address:</strong><br />
                 Factory Survey No. 6 & 16, Near Venkateswara Swami Temple,<br />

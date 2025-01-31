@@ -18,7 +18,7 @@ const ContactBar = () => {
         {/* Phone Number */}
         <div className="flex items-center space-x-2">
           <PhoneIcon fontSize='small' />
-          <span className="text-lg">9440058318, 9704023786</span>
+          <span className="text-lg">+91 9440058318, +91 9704023786</span>
         </div>
 
         {/* Email */}

@@ -275,7 +275,7 @@ const Home = () => {
       <CCol>
         <div className="bg-industrial-gray-light p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow">
           <img
-            src="Images/Fantray/aura/aura_1.png"
+            src="Images/Fantray/aura/aura.png"
             alt="Compact Packaging Solutions"
             className="mx-auto mb-4 max-h-48 object-contain"
           />
@@ -349,7 +349,7 @@ const Home = () => {
       >
 
       <h3 className="border-2 border-slate-900 rounded-lg p-2 text-center mb-4">
-        Pipes and Sheets
+        Pipe Section and Sheets
       </h3>
       <CRow className="row-cols-1 row-cols-md-3 g-4">
         <CCol>
