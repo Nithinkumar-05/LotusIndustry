@@ -101,8 +101,8 @@ const ContactUs = () => {
               <p className="text-gray-600 text-lg"><strong>Email:</strong> <a href="mailto:Lotusindustries97@gmail.com" className="text-indigo-600 hover:underline no-underline">lotusindustries97@gmail.com</a></p>
               <p className="text-gray-600 text-lg">
                 <strong>Address:</strong><br />
-                Factory Survey No. 6 & 16, Near Venkateswara Swami Temple,<br />
-                Injapur Village, Hayathnagar, Telangana 500070
+                Factory Survey No. 6 & 16, Near Venkateswara Swami Temple,<br/>
+                Injapur Village, Hayathnagar,<br />Nagarjuna Sagar Road, Hyderabad, Telangana 500070
               </p>
             </CCol>
 
