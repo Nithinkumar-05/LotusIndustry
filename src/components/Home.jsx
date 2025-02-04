@@ -99,10 +99,10 @@ const Home = () => {
                 Specializing in custom EPS solutions including protective packaging, insulation boards, construction materials, food-grade containers, and specialized industrial components. Built with precision, delivered with excellence.
               </p>
               <div className="flex sm:flex-row gap-4">
-                <button className="w-full sm:w-auto bg-white text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded text-sm md:text-base hover:bg-gray-100 transition-colors">
+                <button className="w-full sm:w-auto bg-white text-gray-900 px-4 md:px-6 py-2 md:py-3 rounded text-sm md:text-base hover:bg-gray-100 transition-colors" onClick={() => navigate('/about')}>
                   Learn More
                 </button>
-                <button className="w-full sm:w-auto bg-red-600 text-white px-4 md:px-6 py-2 md:py-3 rounded text-sm md:text-base hover:bg-red-700 transition-colors">
+                <button className="w-full sm:w-auto bg-red-600 text-white px-4 md:px-6 py-2 md:py-3 rounded text-sm md:text-base hover:bg-red-700 transition-colors" onClick={()=>navigate('/contact')}>
                   Request a Quote
                 </button>
               </div>
