@@ -38,8 +38,8 @@ const ContactUs = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = "919949392669";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=I%27m%20interested%20in%20your%20thermocol%20processing%20solutions`;
+    const phoneNumber = "+919440058318";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello,%20I%20am%20interested%20in%20your%20EPS%20(Thermocol)%20manufacturing%20solutions.%20I%20would%20like%20to%20know%20more%20about%20your%20products%20and%20services.`;
     window.open(whatsappUrl, "_blank");
   };
 
