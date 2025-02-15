@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const AboutUs = () => {
   return (
     <div className="container mx-auto min-h-screen p-6">
@@ -84,7 +84,7 @@ const AboutUs = () => {
         <div className="text-center mt-8">
           <p>
             By placing an order with us, you acknowledge and agree to these terms and conditions. For any questions or 
-            clarifications, please <a href="/contact" className="text-blue-500 underline">contact our team</a>.
+            clarifications, please <Link to="/contact" className="text-blue-500 underline">contact our team</Link>.
           </p>
         </div>
       </div>
