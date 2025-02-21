@@ -12,10 +12,11 @@ async function generateSitemap() {
   try {
     const smStream = new SitemapStream({ hostname: baseUrl });
     
+    // For HashRouter, use the hash-based paths
     const links = [
       { url: '/', changefreq: 'daily', priority: 1.0 },
-      { url: '/about', changefreq: 'monthly', priority: 0.8 },
-      { url: '/contact', changefreq: 'monthly', priority: 0.8 },
+      { url: '/#/about', changefreq: 'monthly', priority: 0.8 },
+      { url: '/#/contact', changefreq: 'monthly', priority: 0.8 },
     ];
 
     // Write all the links to the stream
